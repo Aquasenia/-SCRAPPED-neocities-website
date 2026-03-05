@@ -116,11 +116,10 @@
   border: 3px solid #3e5d3c;
   border-radius: 12px;
   overflow: auto;
-  font-family: poppins-regular;
 }
 
   #table-aboutme{
-     font-family: 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+     font-family: poppins-regular;
      border-collapse: collapse;
   }
   #table-aboutme td{
