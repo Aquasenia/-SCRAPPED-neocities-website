@@ -4,20 +4,10 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   --primary-color: #ffffff; /*White*/
   --secondary-color: #29402d ; /*Dark sage green*/
   --accent-color: #699470 ; /*Sage green*/
+  --text-color: #000000 ; /*Black*/
 }
 
 /*The following section is ONLY used for storing the available text styles.*/
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
@@ -37,12 +27,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   font-style: normal;
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -53,24 +37,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
 }
 
 .poppins-light-italic {
@@ -91,12 +57,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   font-style: italic;
 }
 
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
 .poppins-bold-italic {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -108,12 +68,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   font-weight: 800;
   font-style: italic;
 }
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
 /*End of text styles*/
 
 #header {
@@ -121,7 +75,7 @@ By modifying a variable here, you're changing the whole website's appearance.*/
 }
 
 #about-me {
-  border: 3px solid #3e5d3c;
+  border: 3px solid var(--accent-color);
   border-radius: 12px;
   overflow: auto;
 }
@@ -138,6 +92,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
      text-align: left;
   }
   #table-aboutme tr{
-     background-color: #FFFFFF;
+     background-color: var(--primary-color);
      color: #000000;
   }
