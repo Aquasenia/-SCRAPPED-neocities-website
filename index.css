@@ -1,14 +1,9 @@
-/*The following section is the menu of the entire website.
-By modifying a variable here, you're changing the whole website's appearance.*/
 :root {
-  --primary-color: #ffffff; /*White*/
-  --secondary-color: #29402d ; /*Dark sage green*/
-  --accent-color: #699470 ; /*Sage green*/
-  --text-color: #000000 ; /*Black*/
+  --primary-color: #ffffff;
+  --text-color: #000000;
 }
 
-/*The following section is ONLY used for storing the available text styles.*/
-
+/*Font Classes for Playfair Display font*/
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -24,18 +19,6 @@ By modifying a variable here, you're changing the whole website's appearance.*/
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -56,44 +39,74 @@ By modifying a variable here, you're changing the whole website's appearance.*/
   font-weight: 500;
   font-style: italic;
 }
+/*End of Playfair Display classes*/
 
-.poppins-bold-italic {
+/*Font Classes for Poppins font*/
+.poppins-light {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-style: italic;
 }
 
-.poppins-extrabold-italic {
+.poppins-regular-italic {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   font-style: italic;
 }
-/*End of text styles*/
 
-#header {
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+/*End of Poppins classes*/
+
+.container {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.box {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#site-title {
+  font-family: "Playfair Display", "Times New Roman";
+  font-weight: 600;
+  font-size: 36px;
   text-align: center;
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  padding: 5px;
+  align-content: center;
+}
+
+#subtitle {
+  font-family: "Poppins", "Arial";
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  background-color: var(--primary-color);
   color: var(--text-color);
+  padding: 10px;
 }
-
-#about-me {
-  border: 3px solid var(--accent-color);
-  border-radius: 12px;
-  overflow: auto;
-}
-
-  #table-aboutme{
-     font-family: "Poppins";
-     font-weight: 300;
-     color: var(--text-color);
-     border-collapse: collapse;
-  }
-  #table-aboutme td{
-     border: solid 0px ;
-     padding: 10px;
-     font-size: 12px;
-     text-align: left;
-  }
-  #table-aboutme tr{
-     background-color: var(--primary-color);
-     color: var(--primary-color);
-  }
