@@ -6,49 +6,11 @@
   --width: 450px;
 }
 
-/*Font Classes for Poppins font*/
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-/*End of Poppins classes*/
-
-#body {
+body {
   background-color: var(--background-color);
   box-sizing: border-box;
   margin: 0;
-  padding: 20px;
+  padding: 0px 50px;
 }
 
 h1 {
@@ -85,15 +47,50 @@ a {
   text-decoration: none;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*Navigation bar styles, which will be reused across all pages of the website*/
 #navigation-bar {
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
   font-family: "Poppins", "Arial";
   font-weight: 400;
+  padding: 20px;
 }
 
-/*Navigation bar styles, which will be reused across all pages of the website*/
 .nav-link {
   color: var(--text-color);
   text-decoration: none;
@@ -420,6 +417,8 @@ button path {
     fill: currentColor;
 }
 
+/*Start of card styles for menu*/
+/*Card #1*/ 
 /* -------------------------------- 
 
 File#: _1_banner
@@ -436,44 +435,14 @@ Usage: codyhouse.co/license
 
 * {
   font: inherit;
+  border: 0;
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background-color: hsl(0, 0%, 100%);
-  font-family: system-ui, sans-serif;
-  color: hsl(230, 7%, 23%);
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.4;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.2;
-  color: hsl(230, 13%, 9%);
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem; /* 40px */
-}
-
-h2 {
-  font-size: 2.125rem; /* 34px */
-}
-
-h3 {
-  font-size: 1.75rem; /* 28px */
-}
-
-h4 {
-  font-size: 1.375rem; /* 22px */
 }
 
 ol, ul, menu {
@@ -496,7 +465,7 @@ textarea {
 }
 
 a {
-  color: hsl(250, 84%, 54%);
+  color: var(--accent-color);
 }
 
 table {
@@ -509,10 +478,11 @@ img, video, svg {
   max-width: 100%;
 }
 
+/* -------------------------------- 
 
+Component 
 
-
-/*Start of card styles for menu*/
+-------------------------------- */
 
 .banner {
   display: block;
@@ -540,7 +510,7 @@ img, video, svg {
 .banner__link {
   position: relative;
   text-decoration: none;
-  color: hsl(250, 84%, 54%);
+  color: var(--accent-color);
   display: inline-block;
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform-origin: left bottom;
@@ -655,5 +625,3 @@ img, video, svg {
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
-
-/*End of card styles*/
