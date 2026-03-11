@@ -2,8 +2,7 @@
   --background-color: #ffffff;
   --accent-color: #64805c;
   --text-color: #000000;
-  --height: calc( 80vh - 50px );
-  --width: 450px;
+  --italic-color: #595959;
 }
 
 body {
@@ -40,6 +39,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+}
+
+i {
+  color: var(--italic-color);
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 a {
@@ -130,3 +137,15 @@ td {
 #credits-table {
   border-collapse: collapse;
 }
+
+/*Footer styles, which will be reused across all pages of the website*/
+#footer {
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+/*End of footer styles*/

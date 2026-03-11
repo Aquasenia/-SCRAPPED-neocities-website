@@ -112,3 +112,15 @@ td {
   transform-origin: left;
 }
 /*End of navigation bar styles*/
+
+/*Footer styles, which will be reused across all pages of the website*/
+#footer {
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+/*End of footer styles*/
