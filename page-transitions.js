@@ -10,7 +10,9 @@
   const docEl = document.documentElement;
 
   function show() {
-    docEl.classList.add(TRANSITION_CLASS);
+    // Ensure we always animate in, even when coming back from bfcache.
+    docEl.classList.remove(TRANSITION_CLASS);
+    requestAnimationFrame(() => docEl.classList.add(TRANSITION_CLASS));
   }
 
   function hideAndNavigate(href) {
